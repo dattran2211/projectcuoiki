@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lấy file css gồm các icon có sẵn để dùng ko cần design ở trên mạng, phải có mạng mới chạy được -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+      <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- lấy link css ở ngoài -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style_payment.css">
-    <title>Ivy-Project</title>
+    <title>DAT FASHION</title>
 </head>
 <body>
     <header>
@@ -162,7 +164,7 @@
             </ul>
             </li>
     
-            <li><a href="" id="about-us">VỀ CHÚNG TÔI</a>
+            <li><a href="in4.html">VỀ CHÚNG TÔI</a>
             </li>
     
             
@@ -259,20 +261,31 @@
             </div>
         </div>
         <div class="payment-content-right-payment">
-            <button>TIẾP TỤC THANH TOÁN</button>
+            <button id="payment-button">TIẾP TỤC THANH TOÁN</button>
         </div>
+
+        <script>
+            // Lấy phần tử nút
+            const paymentButton = document.getElementById('payment-button');
+        
+            // Thêm sự kiện click
+            paymentButton.addEventListener('click', function() {
+                alert('Thanh toán thành công, đơn hàng đang được vận chuyển đến bạn!');
+            });
+        </script>
+        
     </div>
 </section>
 <!-- -------------------------- ---------------------------->
 
 
  <section class="app-container">
-    <p>Tải ứng dụng IVY moda</p>
+    <p>Tải ứng dụng DAT FASHION</p>
     <div class="app-google">
         <img src="../images/trangchu/googleplay.png">
         <img src="../images/trangchu/appstore.png">
     </div>
-    <p>Nhận bản tin IVY moda</p>
+    <p>Nhận bản tin DAT FASHION</p>
     <input type="text" placeholder="Nhập email của bạn...">
     <button type="button" onclick="sendEmail()">GỬI</button>
     

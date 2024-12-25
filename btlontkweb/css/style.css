@@ -5,10 +5,18 @@
     font-family: Arial, Helvetica, sans-serif; /* Thiết lập font chữ mặc định cho toàn trang */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* Đảm bảo không tràn màn hình */
+    overflow-x: hidden; /* Ngăn cuộn ngang */
+}
+
+
 header {
     display: flex; /* Sử dụng Flexbox để bố trí các phần tử con trong header */
     justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử, đẩy chúng về hai phía */
-    padding: 12px 50px; /* Thêm khoảng cách trong header (12px trên/dưới, 50px trái/phải) */
+    padding: 12px 20px; /* Thêm khoảng cách trong header (12px trên/dưới, 50px trái/phải) */
     height: 70px; /* Chiều cao của header là 70px */
     align-items: center; /* Căn giữa các phần tử theo chiều dọc */
     position: fixed; /* Giữ header cố định khi cuộn trang */
@@ -17,7 +25,10 @@ header {
     width: 100%; /* Header chiếm toàn bộ chiều rộng của trang */
     z-index: 1; /* Đặt thứ tự lớp của header để nằm trên các phần tử khác */
     background: rgba(255, 255, 255, 0.3); /* Màu nền trắng mờ 30% */
+    border-bottom: 1px solid #ddd; /* Đường phân cách */
+
 }
+
 
 header.sticky {
     background: rgba(255, 255, 255, 1); /* Khi header có lớp sticky, nền sẽ chuyển thành trắng không trong suốt */
@@ -340,7 +351,7 @@ a {
     left: 10px;
     cursor: pointer;
     z-index: 1000;
-}
+    }
 .bar {
     width: 25px;
     height: 3px;
